@@ -62,3 +62,9 @@ Alternative: use qtcreator
 
 *TODO*
 
+#### Connections on the Arduino
+
+D2 interface | atmega328p | arduino
+--- | --- | ---
+C2D | PORTB4 | 12
+C2CK | PORTB3 |11
