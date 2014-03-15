@@ -68,3 +68,8 @@ D2 interface | atmega328p | arduino
 --- | --- | ---
 C2D | PORTB4 | 12
 C2CK | PORTB3 |11
+
+#### Usage
+```bash
+./SiArduFlash -h
+```
