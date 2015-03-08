@@ -133,7 +133,7 @@ public:
       qsReadableValue = "ERROR";
       return false;
     }
-    qbaEEpromValue = qslTmp.at(0).toAscii();
+    qbaEEpromValue = qslTmp.at(0).toLatin1();
     qsReadableValue = qslTmp.at(1);
     return true;
   }
@@ -162,9 +162,9 @@ public:
 
     QByteArray qbaTmp, qbaRet;
     int iTmp = 0;
-    for(int i = 0; i < qsString.toAscii().length(); i++)
+    for(int i = 0; i < qsString.toLatin1().length(); i++)
     {
-      iTmp = (int) qsString.toAscii().at(i);
+      iTmp = (int) qsString.toLatin1().at(i);
       qbaTmp = QByteArray::number(iTmp, 16);
       if(qbaTmp.length() == 1)
       {

@@ -94,7 +94,7 @@ bool CSerialCommunication::serialReadBlock(QByteArray qbaLength, QByteArray qbaA
   qsRead.remove(QString("br") + QString(qbaLength) + QString(qbaAdress) + "ok");
   qsRead = QString(qbaRead).remove("\n>");
 
-  qbaRead = qsRead.toAscii();
+  qbaRead = qsRead.toLatin1();
 
   bRetVal = true;
 
